@@ -95,7 +95,6 @@ open class GestureHandler {
   var manualActivation = false
     private set
   var isHandledManually = false
-    private set
 
   private var lastEventOffsetX = 0f
   private var lastEventOffsetY = 0f
