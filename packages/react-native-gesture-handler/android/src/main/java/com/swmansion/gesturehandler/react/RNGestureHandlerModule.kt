@@ -151,7 +151,7 @@ class RNGestureHandlerModule(reactContext: ReactApplicationContext?) :
         // When going from UNDETERMINED to ACTIVE, force going through BEGAN to preserve
         // the correct state flow
         if (newState == GestureHandler.STATE_ACTIVE) {
-          handler.begin()
+          handler.begin(fromManualStateChange = true)
         }
       }
 
